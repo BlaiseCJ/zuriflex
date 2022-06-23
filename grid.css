@@ -1,0 +1,19 @@
+.item1 { grid-area: main; background-color: orangered;}
+.item2 { grid-area: side; background-color: orange;}
+.item3 { grid-area: nav; background-color: green;}
+.item4 { grid-area: sidebar1; background-color: aqua;}
+.item5 { grid-area: sidebar2; background-color: aqua;}
+
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'main main main main side side'
+    'nav nav nav sidebar1 sidebar1 sidebar1'
+    'nav nav nav sidebar2 sidebar2 sidebar2';
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+}
